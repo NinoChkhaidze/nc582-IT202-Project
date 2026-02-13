@@ -1,4 +1,14 @@
 <?php
+
+/*
+Name: Nintsi Chkhaidze
+Date: February 13, 2026
+Course: IT202
+Section: 006
+Assignment: Phase 1 - Database and Login
+Email: nc582@njit.edu
+*/
+
  error_log('$_POST ' . print_r($_POST, true));
  require_once('database.php');
  $emailAddress = $_POST['email_address'];
