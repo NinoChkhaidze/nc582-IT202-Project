@@ -3,7 +3,7 @@
 -- Date: February 13, 2026
 -- Course: IT202
 -- Section: 006
--- Assignment: Phase 1 - Database and Login
+-- Assignment: Phase 1 - Login and Logout
 -- Email: nc582@njit.edu
 
 CREATE DATABASE cosmetic;
