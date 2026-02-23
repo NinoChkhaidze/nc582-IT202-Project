@@ -26,5 +26,5 @@ Email: nc582@njit.edu
        if ($echo_mode) echo "Database connection failed: " . $e->getMessage();
    }
  }
- getDB(true);
+/*  getDB(true);*/
 ?>
