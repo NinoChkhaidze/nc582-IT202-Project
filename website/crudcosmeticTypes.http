@@ -2,9 +2,9 @@ POST http://localhost:3000/addcosmetictype.test.php
 Content-Type: application/x-www-form-urlencoded
 
 cosmetic_type_id=1
-&cosmetic_type_code=LIP
-&cosmetic_shelf_number=B21
-&cosmetic_type_name=Lipstick
+&cosmetic_type_code=EYS
+&cosmetic_shelf_number=C15
+&cosmetic_type_name=Eyeshadow
 
 ###
 GET http://localhost:3000/listcosmetictypes.test.php
@@ -14,9 +14,9 @@ POST http://localhost:3000/changecosmetictype.test.php
 Content-Type: application/x-www-form-urlencoded
 
 cosmetic_type_id=1
-&cosmetic_type_code=LIP
-&cosmetic_type_name=Lipstick
-&cosmetic_shelf_number=A43
+&cosmetic_type_code=EYS
+&cosmetic_type_name=Eyeshadow
+&cosmetic_shelf_number=A40
 
 ###
 POST http://localhost:3000/removecosmetictype.test.php

@@ -4,7 +4,7 @@ $cosmetic_type_id = $_POST['cosmetic_type_id'];
 if ((trim($cosmetic_type_id) == '') or (!is_numeric($cosmetic_type_id))) {
   echo "<h2>Sorry, you must enter a valid category ID</h2>\n";
 } else if (!CosmeticType::findType($cosmetic_type_id)) {
-  echo "<h2>Sorry, A category with ID #$cosmetic_type_id does not exist</h2>\n";
+  echo "<h2>Sorry, A type with ID #$cosmetic_type_id does not exist</h2>\n";
 } else {
   $type = CosmeticType::findType($cosmetic_type_id);
   $type->cosmetic_type_id = $_POST['cosmetic_type_id'];

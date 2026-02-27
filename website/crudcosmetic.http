@@ -1,0 +1,35 @@
+POST http://localhost:3000/addcosmetic.test.php
+Content-Type: application/x-www-form-urlencoded
+
+cosmetic_id=21
+&cosmetic_type_id=2
+&cosmetic_code=MSC006
+&cosmetic_name=Lancome Hypnose Mascara
+&cosmetic_description=Buildable volume and intense curl
+&cosmetic_shade=Noir
+&cosmetic_finish=Glossy
+&cosmetic_buy_price=22.00
+&cosmetic_sell_price=42.00
+
+###
+GET http://localhost:3000/listcosmetics.test.php
+
+###
+POST http://localhost:3000/changecosmetic.test.php
+Content-Type: application/x-www-form-urlencoded
+
+cosmetic_id=2
+&cosmetic_type_id=5
+&cosmetic_code=RHIGLZ
+&cosmetic_name=Rhode Peptide Blush
+&cosmetic_description=An iconic blush
+&cosmetic_shade=Raspberry Jelly
+&cosmetic_finish=Dewy
+&cosmetic_buy_price=30.00
+&cosmetic_sell_price=50.00
+
+###
+POST http://localhost:3000/removecosmetic.test.php
+Content-Type: application/x-www-form-urlencoded
+
+cosmetic_id=2

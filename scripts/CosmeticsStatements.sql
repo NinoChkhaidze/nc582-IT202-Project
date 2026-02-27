@@ -17,3 +17,8 @@ CREATE TABLE cosmetics (
     ON UPDATE CASCADE
 );
 
+SELECT * FROM cosmetics;
+
+
+
+
