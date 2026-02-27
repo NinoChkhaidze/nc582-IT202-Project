@@ -1,5 +1,12 @@
 -- MySQL dump 10.13  Distrib 8.0.45, for macos15 (arm64)
 --
+-- // Name: Nintsi Chkhaidze
+-- // Date: February 27, 2026
+-- // Course: IT202
+-- // Section: 006
+-- // Assignment: Phase 2 - CRUD Categories and Items
+-- // Email: nc582@njit.edu
+
 -- Host: localhost    Database: cosmetic
 -- ------------------------------------------------------
 -- Server version	8.0.45

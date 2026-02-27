@@ -1,6 +1,13 @@
 <?php
 require_once("cosmetictype.php");
 
+// Name: Nintsi Chkhaidze
+// Date: February 27, 2026
+// Course: IT202
+// Section: 006
+// Assignment: Phase 2 - CRUD Categories and Items
+// Email: nc582@njit.edu
+
 $cosmetic_type_id = $_POST['cosmetic_type_id'];
 $cosmetic_type_code = $_POST['cosmetic_type_code'];
 $cosmetic_type_name = $_POST['cosmetic_type_name'];

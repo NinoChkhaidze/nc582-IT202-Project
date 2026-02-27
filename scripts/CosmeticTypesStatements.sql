@@ -10,6 +10,12 @@ CREATE TABLE cosmetic_types (
   PRIMARY KEY (cosmetic_type_id)
 );
 
+-- // Name: Nintsi Chkhaidze
+-- // Date: February 27, 2026
+-- // Course: IT202
+-- // Section: 006
+-- // Assignment: Phase 2 - CRUD Categories and Items
+-- // Email: nc582@njit.edu
 show tables;
 INSERT INTO cosmetic_types (cosmetic_type_id, cosmetic_type_code, cosmetic_type_name, cosmetic_shelf_number)
 VALUES

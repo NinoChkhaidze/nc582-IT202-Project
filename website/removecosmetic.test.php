@@ -1,4 +1,11 @@
 <?php
+// Name: Nintsi Chkhaidze
+// Date: February 27, 2026
+// Course: IT202
+// Section: 006
+// Assignment: Phase 2 - CRUD Categories and Items
+// Email: nc582@njit.edu
+
 error_log('$_POST ' . print_r($_POST, true));
 require_once("cosmetic.php");
 
