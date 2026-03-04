@@ -1,11 +1,10 @@
 POST http://localhost:3000/addcosmetictype.test.php
 Content-Type: application/x-www-form-urlencoded
 
-cosmetic_type_id=1
-&cosmetic_type_code=EYS
-&cosmetic_shelf_number=C15
-&cosmetic_type_name=Eyeshadow
-
+cosmetic_type_id=2
+&cosmetic_type_code=LIP
+&cosmetic_type_name=Lipstick
+&cosmetic_shelf_number=A221
 ###
 GET http://localhost:3000/listcosmetictypes.test.php
 
