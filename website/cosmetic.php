@@ -2,11 +2,11 @@
 require_once('database.php');
 class Cosmetic
 {
-    // Name: Nintsi Chkhaidze
-// Date: February 27, 2026
+// Name: Nintsi Chkhaidze
+// Date: March 13, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 2 - CRUD Categories and Items
+// Assignment: Phase 3, HTML Website Layout
 // Email: nc582@njit.edu
 
     public $cosmetic_id;
@@ -152,5 +152,35 @@ class Cosmetic
        $db->close();
        return $result;
    }
+
+    static function getCosmeticsByType($cosmetic_type_id)
+{
+    $db = getDB();
+    $query = "SELECT * FROM cosmetics WHERE cosmetic_type_id = $cosmetic_type_id";
+    $result = $db->query($query);
+    if (mysqli_num_rows($result) > 0) {
+        $types = array();
+        while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            $type = new Cosmetic(
+                $row['cosmetic_id'],
+                $row['cosmetic_type_id'],
+                $row['cosmetic_code'],
+                $row['cosmetic_name'],
+                $row['cosmetic_description'],
+                $row['cosmetic_shade'],
+                $row['cosmetic_finish'],
+                $row['cosmetic_buy_price'],
+                $row['cosmetic_sell_price']
+            );
+            array_push($types, $type);
+            unset($type);
+        }
+        $db->close();
+        return $types;
+    } else {
+        $db->close();
+        return NULL;
+    }
+}
 }
 ?>

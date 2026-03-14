@@ -2,10 +2,10 @@
 require_once("cosmetic.php");
 
 // Name: Nintsi Chkhaidze
-// Date: February 27, 2026
+// Date: March 13, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 2 - CRUD Categories and Items
+// Assignment: Phase 3, HTML Website Layout
 // Email: nc582@njit.edu
 
 $cosmetic_id = $_POST['cosmetic_id'];
@@ -18,7 +18,9 @@ $cosmetic_finish = $_POST['cosmetic_finish'];
 $cosmetic_buy_price = $_POST['cosmetic_buy_price'];
 $cosmetic_sell_price = $_POST['cosmetic_sell_price'];
 
-if ((trim($cosmetic_id) == '') or (!is_numeric($cosmetic_id))) {
+if (!isset($_SESSION['login'])) {
+  echo "<h2>Sorry, you must be logged in to add a Cosmetic</h2>\n";
+} else if ((trim($cosmetic_id) == '') or (!is_numeric($cosmetic_id))) {
   echo "<h2>Sorry, you must enter a valid Cosmetic ID number</h2>\n";
 } else if (Cosmetic::findCosmetic($cosmetic_id)) {
   echo "<h2>Sorry, a Cosmetic with the ID #$cosmetic_id already exists</h2>\n";

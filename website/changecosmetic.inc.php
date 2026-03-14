@@ -1,15 +1,20 @@
 <?php
 // Name: Nintsi Chkhaidze
-// Date: February 27, 2026
+// Date: March 13, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 2 - CRUD Categories and Items
+// Assignment: Phase 3, HTML Website Layout
 // Email: nc582@njit.edu
 
 require_once("cosmetic.php");
+if (!isset($_SESSION['login'])) {
+  echo "<h2>Sorry, you must be logged in to update a Cosmetic</h2>\n";
+} else if ($_POST['answer'] == 'Cancel') {
+  echo "<h2>Update Cancelled</h2>\n";
+} else {
 $cosmetic_id = $_POST['cosmetic_id'];
 if ((trim($cosmetic_id) == '') or (!is_numeric($cosmetic_id))) {
-  echo "<h2>Sorry, you must enter a valid category ID</h2>\n";
+  echo "<h2>Sorry, you must enter a valid Cosmetic ID</h2>\n";
 } else if (!Cosmetic::findCosmetic($cosmetic_id)) {
   echo "<h2>Sorry, A cosmetic with ID #$cosmetic_id does not exist</h2>\n";
 } else {
@@ -30,5 +35,6 @@ if ((trim($cosmetic_id) == '') or (!is_numeric($cosmetic_id))) {
   } else {
      echo "<h2>Problem updating Cosmetic $cosmetic_id</h2>\n";
   }
+}
 }
 ?>
