@@ -1,10 +1,11 @@
-Enter New Cosmetic Information</h2>
+<?php
 // Name: Nintsi Chkhaidze
 // Date: March 13, 2026
 // Course: IT202
 // Section: 006
 // Assignment: Phase 3, HTML Website Layout
 // Email: nc582@njit.edu
+?>
 <h2>
 <form name="newcosmetic" action="index.php" method="post">
     <table cellpadding="1" border="0">

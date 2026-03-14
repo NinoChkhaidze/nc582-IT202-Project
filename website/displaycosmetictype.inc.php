@@ -1,5 +1,4 @@
 <?php
-
 // Name: Nintsi Chkhaidze
 // Date: March 13, 2026
 // Course: IT202
@@ -30,6 +29,7 @@ if (!isset($_POST['cosmetic_type_id']) || !is_numeric($_POST['cosmetic_type_id']
                 <th>Name</th>
                 <th>Shade</th>
                 <th>Finish</th>
+                <th>Buy Price</th>
                 <th>Sell Price</th>
             </tr>
             <?php
