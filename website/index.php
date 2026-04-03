@@ -5,7 +5,7 @@ session_start();
 // Date: March 13, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 3, HTML Website Layout
+// Assignment: Phase 4 - Input Security and CSS Styling
 // Email: nc582@njit.edu
 */
 require_once("cosmetictype.php");
@@ -14,12 +14,16 @@ require_once("cosmetic.php");
 
 <!DOCTYPE html>
 <html>
-<head><title>Cosmetic Inventory Helper</title></head>
+<head>
+   <title>Nintsi's Cosmetic Inventory</title>
+   <link rel="icon" type="image/png" href="images/logo.png">
+   <link rel="stylesheet" type="text/css" href="cosmetic_styles.css">
+</head>
 <body>
    <header>
        <?php include("header.inc.php"); ?>
    </header>
-   <section>
+   <section style="height: 425px;">
        <nav>
            <?php include("nav.inc.php"); ?>
        </nav>

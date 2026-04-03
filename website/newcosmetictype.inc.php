@@ -15,15 +15,15 @@
        </tr>
        <tr>
            <td>Cosmetic Type Code:</td>
-           <td><input type="text" name="cosmetic_type_code" size="20" placeholder="XXX" minlength="3" required></td>
+           <td><input type="text" name="cosmetic_type_code" size="20" placeholder="XXX" minlength="2" maxlength="10" required></td>
        </tr>
        <tr>
            <td>Cosmetic Type Name:</td>
-           <td><input type="text" name="cosmetic_type_name" size="20" required></td>
+           <td><input type="text" name="cosmetic_type_name" size="40" minlength="10" maxlength="100" required></td>
        </tr>
        <tr>
            <td>Cosmetic Type shelf number:</td>
-           <td><input type="text" name="cosmetic_shelf_number" size="20" required></td>
+           <td><input type="text" name="cosmetic_shelf_number" size="20" minlength="2" maxlength="50" required></td>
        </tr>
    </table><br>
    <input type="submit" value="Submit New Cosmetic Type">

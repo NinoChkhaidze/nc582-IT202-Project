@@ -5,7 +5,7 @@ Name: Nintsi Chkhaidze
 Date: February 13, 2026
 Course: IT202
 Section: 006
-Assignment: Phase 1 - Login and Logout
+Assignment: Phase 4 - Input Security and CSS Styling
 Email: nc582@njit.edu
 */
 
@@ -13,6 +13,8 @@ Email: nc582@njit.edu
  require_once('database.php');
  $emailAddress = $_POST['email_address'];
  $password = $_POST['password'];
+ if (filter_var($emailAddress, FILTER_VALIDATE_EMAIL)) {
+
  $query = "SELECT first_name, last_name, pronouns, phone_number FROM cosmetic_users " .
         "WHERE email_address = ? AND password = SHA2(?,256)";
  $db = getDB();
@@ -34,5 +36,9 @@ Email: nc582@njit.edu
  } else {
    echo "<h2>Sorry, login incorrect for the Cosmetic Inventory Website </h2>\n";
    echo "<a href=\"index.php\">Please try again</a>\n";
+ }
+ } else {
+   echo "<h2>Please enter a valid email address</h2>\n";
+   echo '<a href="index.php">Please try again</a>';
  }
 ?>

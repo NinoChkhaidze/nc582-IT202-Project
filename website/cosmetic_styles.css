@@ -1,0 +1,172 @@
+/*
+Name: Nintsi Chkhaidze
+Date: April 3, 2026
+Course: IT202
+Section: 006
+Assignment: Phase 4 - Input Security and CSS Styling
+Email: nc582@njit.edu
+*/
+
+body {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 16px;
+   background-color: #F5EDE8;
+   color: #3D1C12;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+   margin: 0px;
+   padding: 0px;
+}
+
+h1 {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 26px;
+   color: #3D1C12;
+}
+
+h2 {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 20px;
+   color: #3D1C12;
+}
+
+h3 {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 18px;
+   color: #F5EDE8;
+}
+
+h4 {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 16px;
+   color: #3D1C12;
+}
+
+footer {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 14px;
+   background-color: #8B4F3F;
+   color: #F5EDE8;
+   padding: 5px;
+   border-top: 3px solid #E8A898;
+   border-bottom: 3px solid #E8A898;
+}
+
+main {
+   padding: 5px;
+   border-top: 3px solid #E8A898;
+   float: left;
+   width: 75%;
+   height: 100%;
+}
+
+main table {
+   padding: 2px;
+}
+
+main td {
+   padding: 2px;
+}
+
+header {
+   background-color: #C2856A;
+   color: #F5EDE8;
+   padding: 5px;
+   border-bottom: 3px solid #E8A898;
+   height: 70px;
+   width: 100%;
+}
+
+.header-div {
+   background-color: #C2856A;
+   padding: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.header-div img {
+   width: 50px;
+   height: 50px;
+   margin-right: 8px;
+}
+
+.header-div h1,
+.header-div h2 {
+   color: #F5EDE8;
+   margin: 0;
+}
+
+.navigation {
+   padding: 5px;
+   border-bottom: 1px solid #E8A898;
+   border-right: 1px solid #E8A898;
+   border-top: 1px solid #E8A898;
+   border-left: 5px solid #E8A898;
+   color: #F5EDE8;
+   background-color: #8B4F3F;
+   width: 20%;
+}
+
+footer {
+   clear: both;
+   text-align: center;
+   width: 100%;
+}
+
+a, a:link {
+   color: #8B4F3F;
+}
+
+a:active {
+   color: #F5EDE8;
+}
+
+nav a, nav a:link {
+   color: #E8A898;
+   text-decoration: none;
+}
+
+nav a:visited {
+   color: #F5C4B0;
+}
+
+nav a:hover {
+   color: #F5EDE8;
+}
+
+nav a:active {
+   color: #F5EDE8;
+}
+
+input {
+   border: 2px solid #C2856A;
+   background-color: #FDF8F5;
+   color: #3D1C12;
+   border-radius: 5px;
+}
+
+input[type=submit] {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 14px;
+}
+
+input:required:invalid {
+   border-color: #8B4F3F;
+   background-color: #FDE8E0;
+}
+
+input:required:valid {
+   border-color: #E8A898;
+   background-color: #F5EDE8;
+}
+
+input:focus {
+   outline: none;
+   border-color: #C2856A;
+   background-color: #FDE8E0;
+   box-shadow: 0 0 5px #C2856A;
+}

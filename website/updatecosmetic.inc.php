@@ -38,31 +38,31 @@ if (!isset($_POST['itemID']) or (!is_numeric($_POST['itemID']))) {
         </tr>
         <tr>
           <td>Cosmetic Code</td>
-          <td><input type="text" name="cosmetic_code" value="<?php echo $cosmetic->cosmetic_code; ?>"></td>
+          <td><input type="text" name="cosmetic_code" value="<?php echo $cosmetic->cosmetic_code; ?>" minlength="2" maxlength="10" required></td>
         </tr>
         <tr>
           <td>Cosmetic Name</td>
-          <td><input type="text" name="cosmetic_name" value="<?php echo $cosmetic->cosmetic_name; ?>"></td>
+          <td><input type="text" name="cosmetic_name" value="<?php echo $cosmetic->cosmetic_name; ?>" minlength="10" maxlength="100" required></td>
         </tr>
         <tr>
           <td>Description</td>
-          <td><input type="text" name="cosmetic_description" value="<?php echo $cosmetic->cosmetic_description; ?>"></td>
+          <td><input type="text" name="cosmetic_description" value="<?php echo $cosmetic->cosmetic_description; ?>" minlength="100" maxlength="255" required></td>
         </tr>
         <tr>
           <td>Shade</td>
-          <td><input type="text" name="cosmetic_shade" value="<?php echo $cosmetic->cosmetic_shade; ?>"></td>
+          <td><input type="text" name="cosmetic_shade" value="<?php echo $cosmetic->cosmetic_shade; ?>" minlength="2" maxlength="50" required></td>
         </tr>
         <tr>
           <td>Finish</td>
-          <td><input type="text" name="cosmetic_finish" value="<?php echo $cosmetic->cosmetic_finish; ?>"></td>
+          <td><input type="text" name="cosmetic_finish" value="<?php echo $cosmetic->cosmetic_finish; ?>" minlength="2" maxlength="50" required></td>
         </tr>
         <tr>
           <td>Buy Price</td>
-          <td><input type="text" name="cosmetic_buy_price" value="<?php echo $cosmetic->cosmetic_buy_price; ?>"></td>
+          <td><input type="number" name="cosmetic_buy_price" value="<?php echo $cosmetic->cosmetic_buy_price; ?>" step="0.01" min="0.01" max="9999.99" required></td>
         </tr>
         <tr>
           <td>Sell Price</td>
-          <td><input type="text" name="cosmetic_sell_price" value="<?php echo $cosmetic->cosmetic_sell_price; ?>"></td>
+          <td><input type="number" name="cosmetic_sell_price" value="<?php echo $cosmetic->cosmetic_sell_price; ?>" step="0.01" min="0.01" max="9999.99" required></td>
         </tr>
       </table><br><br>
       <input type="submit" name="answer" value="Update Cosmetic">

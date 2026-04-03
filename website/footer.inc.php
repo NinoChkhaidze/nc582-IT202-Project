@@ -8,7 +8,7 @@
 ?>
 
 <p>&copy; Cosmetic Inventory </p>
-<p>Nintsi Chkhaidze, IT202-06, Internet Applications, Phase 3, nc582@njit.edu</p>
+<p>Nintsi Chkhaidze, IT202-06, Internet Applications, Phase 4, nc582@njit.edu</p>
 <p>
     
     <?php
