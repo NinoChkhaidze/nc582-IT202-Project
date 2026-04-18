@@ -1,9 +1,9 @@
 /*
 Name: Nintsi Chkhaidze
-Date: April 3, 2026
+Date: April 18, 2026
 Course: IT202
 Section: 006
-Assignment: Phase 4 - Input Security and CSS Styling
+Assignment: Phase 5 - JavaScript
 Email: nc582@njit.edu
 */
 
@@ -60,7 +60,7 @@ main {
    padding: 5px;
    border-top: 3px solid #E8A898;
    float: left;
-   width: 75%;
+   width: 61%;
    height: 100%;
 }
 
@@ -115,6 +115,29 @@ footer {
    clear: both;
    text-align: center;
    width: 100%;
+}
+
+aside {
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   font-size: 15px;
+   padding: 5px;
+   border-top: 3px solid #E8A898;
+   border-left: 1px solid #E8A898;
+   color: #F5EDE8;
+   background-color: #8B4F3F;
+   float: right;
+   width: 14%;
+   height: 100%;
+}
+
+aside h1,
+aside h3 {
+   color: #F5EDE8;
+}
+
+aside span {
+   color: #F5C4B0;
+   font-weight: bold;
 }
 
 a, a:link {

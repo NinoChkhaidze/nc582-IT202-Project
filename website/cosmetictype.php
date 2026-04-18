@@ -1,9 +1,9 @@
 <?php
 // Name: Nintsi Chkhaidze
-// Date: February 27, 2026
+// Date: April 18, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 2 - CRUD Categories and Items
+// Assignment: Phase 5 - JavaScript
 // Email: nc582@njit.edu
 
 require_once('database.php');
@@ -92,6 +92,20 @@ class CosmeticType
         } else {
             $db->close();
             return NULL;
+        }
+    }
+
+    static function getTotalCosmeticTypes()
+    {
+        $db = getDB();
+        $query = "SELECT COUNT(cosmetic_type_id) FROM cosmetic_types";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        $db->close();
+        if ($row) {
+            return $row[0];
+        } else {
+            return 0;
         }
     }
 

@@ -1,18 +1,36 @@
 <?php
 // Name: Nintsi Chkhaidze
-// Date: March 13, 2026
+// Date: April 17, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 3, HTML Website Layout
+// Assignment: Phase 5 - JavaScript
 // Email: nc582@njit.edu
 
 require_once("cosmetic.php");
 $cosmetics = Cosmetic::getCosmetics();
 if ($cosmetics) {
 ?>
+    <script language="javascript">
+        function listbox_dblclick() {
+            document.cosmetics.displaycosmetic.click()
+        }
+        function button_click(target) {
+            var userConfirmed = true;
+            if (target == 1) {
+                userConfirmed = confirm("Are you sure you want to remove this cosmetic?");
+            }
+            if (userConfirmed) {
+                if (target == 0) cosmetics.action = "index.php?content=displaycosmetic";
+                if (target == 1) cosmetics.action = "index.php?content=removecosmetic";
+                if (target == 2) cosmetics.action = "index.php?content=updatecosmetic";
+            } else {
+                alert("Action canceled.");
+            }
+        }
+    </script>
     <h2>Select Cosmetic</h2>
     <form name="cosmetics" method="post">
-        <select name="cosmetic_id" size="20">
+        <select ondblclick="listbox_dblclick()" name="itemID" size="20">
             <?php
             $first = true;
             foreach ($cosmetics as $cosmetic) {
@@ -27,6 +45,10 @@ if ($cosmetics) {
             }
             ?>
         </select>
+        <br>
+        <input type="submit" onClick="button_click(0)" name="displaycosmetic" value="View Cosmetic">
+        <input type="submit" onClick="button_click(1)" name="deletecosmetic" value="Delete Cosmetic">
+        <input type="submit" onClick="button_click(2)" name="updatecosmetic" value="Update Cosmetic">
     </form>
 <?php
 } else {

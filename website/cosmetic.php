@@ -3,10 +3,10 @@ require_once('database.php');
 class Cosmetic
 {
 // Name: Nintsi Chkhaidze
-// Date: March 13, 2026
+// Date: April 18, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 3, HTML Website Layout
+// Assignment: Phase 5 - JavaScript
 // Email: nc582@njit.edu
 
     public $cosmetic_id;
@@ -111,6 +111,48 @@ class Cosmetic
         } else {
             $db->close();
             return NULL;
+        }
+    }
+
+    static function getTotalCosmetics()
+    {
+        $db = getDB();
+        $query = "SELECT COUNT(cosmetic_id) FROM cosmetics";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        $db->close();
+        if ($row) {
+            return $row[0];
+        } else {
+            return 0;
+        }
+    }
+
+    static function getTotalBuyPrice()
+    {
+        $db = getDB();
+        $query = "SELECT SUM(cosmetic_buy_price) FROM cosmetics";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        $db->close();
+        if ($row && $row[0] != NULL) {
+            return $row[0];
+        } else {
+            return 0;
+        }
+    }
+
+    static function getTotalSellPrice()
+    {
+        $db = getDB();
+        $query = "SELECT SUM(cosmetic_sell_price) FROM cosmetics";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        $db->close();
+        if ($row && $row[0] != NULL) {
+            return $row[0];
+        } else {
+            return 0;
         }
     }
 

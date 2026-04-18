@@ -2,10 +2,10 @@
 session_start();
 /*
 // Name: Nintsi Chkhaidze
-// Date: March 13, 2026
+// Date: April 18, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 4 - Input Security and CSS Styling
+// Assignment: Phase 5 - JavaScript
 // Email: nc582@njit.edu
 */
 require_once("cosmetictype.php");
@@ -18,6 +18,7 @@ require_once("cosmetic.php");
    <title>Nintsi's Cosmetic Inventory</title>
    <link rel="icon" type="image/png" href="images/logo.png">
    <link rel="stylesheet" type="text/css" href="cosmetic_styles.css">
+   <script src="realtime.js"></script>
 </head>
 <body>
    <header>
@@ -38,6 +39,15 @@ require_once("cosmetic.php");
            ?>
        </main>
    </section>
+   <?php if (isset($_SESSION['login'])) { ?>
+   <aside>
+       <?php include("aside.inc.php"); ?>
+       <script>
+           getRealTime();
+           setInterval(getRealTime, 5000);
+       </script>
+   </aside>
+   <?php } ?>
    <footer>
        <?php include("footer.inc.php"); ?>
    </footer>
