@@ -2,10 +2,10 @@
 require_once("cosmetictype.php");
 
 // Name: Nintsi Chkhaidze
-// Date: March 13, 2026
+// Date: April 17, 2026
 // Course: IT202
 // Section: 006
-// Assignment: Phase 3, HTML Website Layout
+// Assignment: Phase 5 - JavaScript
 // Email: nc582@njit.edu
 
 $cosmetic_type_id = filter_input(INPUT_POST, 'cosmetic_type_id', FILTER_VALIDATE_INT);

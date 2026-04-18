@@ -3,7 +3,7 @@ require_once('database.php');
 class Cosmetic
 {
 // Name: Nintsi Chkhaidze
-// Date: April 18, 2026
+// Date: April 17, 2026
 // Course: IT202
 // Section: 006
 // Assignment: Phase 5 - JavaScript
